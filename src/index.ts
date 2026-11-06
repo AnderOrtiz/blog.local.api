@@ -32,8 +32,6 @@ app.get("/info", (_req, res) => {
 });
 
 
-app.use(express.json());
-
 // Endpoint de Health Check
 app.get('/health', (req: Request, res: Response) => {
   // Si recibe ?simular=falla, devuelve 503 Service Unavailable
