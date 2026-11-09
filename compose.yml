@@ -1,0 +1,14 @@
+services:
+  nodo1:
+    image: blog-local
+    hostname: nodo1
+    ports: ["9005:9000"]
+  nodo2:
+    image: blog-local
+    hostname: nodo2
+    ports: ["9006:9000"]
+
+  nodo3:
+    image: blog-local
+    hostname: nodo3
+    ports: ["9007:9000"]
