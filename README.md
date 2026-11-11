@@ -41,3 +41,16 @@ Verifica que el contenedor esté corriendo y revisa sus registros:
 docker ps
 docker logs nodo1
 ```
+
+comandos vistos en clase 33 
+```
+docker compose exec nodo1 wget -qO- http://nodo2:9000/health
+```
+---
+```
+docker compose exec nodo1 wget -qO- http://172.28.0.13:9000/health
+```
+---
+```
+docker ps --format "{{.Names}}  {{.Ports}}"
+```
